@@ -37,7 +37,6 @@ h2,
 p,
 span {
   font-family: "Alice";
-  text-shadow: 0.2px 0.2px 8px rgba(0, 0, 0, 0.4);
 }
 
 #container-home main div p {
@@ -54,6 +53,13 @@ span {
 
   #container-home main img {
     height: 100vh;
+  }
+
+  #container-home main div h1,
+  h2,
+  p,
+  span {
+    text-shadow: 0.2px 0.2px 8px rgba(0, 0, 0, 0.4);
   }
 
   #container-home main div h1 {
