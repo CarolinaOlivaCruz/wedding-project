@@ -14,12 +14,44 @@ header div {
 }
 
 header div span {
-    font-weight: 500;
-    font-size: 26px;
-    font-family: "Alice";
-    align-items: center;
+  font-weight: 500;
+  font-size: 28px;
+  font-family: "Alice";
 }
 
-header div button img {
-   width: 30px;
+.button-menu-gray {
+  display: block;
+  width: 30px;
+}
+
+.button-menu-white {
+  display: none;
+}
+
+@media (min-width: 780px) {
+  header {
+    box-shadow: 0.2px 0.2px 8px rgba(0, 0, 0, 0.4);
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  header div {
+    width: 70%;
+  }
+
+  header div span {
+    font-size: 45px;
+    height: 100%;
+  }
+
+  .button-menu-white {
+    display: block;
+    width: 40px;
+  }
+
+  .button-menu-gray {
+    display: none;
+  }
 }

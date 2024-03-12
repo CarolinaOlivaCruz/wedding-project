@@ -9,9 +9,10 @@ function Header() {
   return (
     <header>
       <div>
-        <span>S&H</span>
+        <span>H&S</span>
         <button id="button-menu">
-          <img src={iconMenuGray} alt="" />
+          <img className="button-menu-gray" src={iconMenuGray} alt="" />
+          <img className="button-menu-white" src={iconMenuWhite} alt="" />
         </button>
       </div>
     </header>

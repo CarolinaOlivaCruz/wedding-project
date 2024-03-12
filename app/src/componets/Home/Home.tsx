@@ -12,7 +12,7 @@ function Home() {
       <main>
         <img src={imgMarried} alt="Imagem do casal" />
         <div>
-          <h1>SAMARA & HIAGO</h1>
+          <h1>HIAGO & SAMARA</h1>
           <span>SAVE DATE</span>
           <h2>25.10.2024</h2>
           <p>
