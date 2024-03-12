@@ -1,0 +1,39 @@
+#container-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#container-home main {
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+#container-home main img {
+  width: 100vw;
+  height: 60%;
+  object-fit: cover;
+}
+
+#container-home main div {
+  width: 80%;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#container-home main div h1,
+h2,
+p,
+span {
+  font-family: "Alice";
+}
+
+#container-home main div p {
+  text-align: center;
+}
