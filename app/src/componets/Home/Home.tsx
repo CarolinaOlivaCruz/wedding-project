@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 import imgMarried from "../../../src/assets/img/married.jpg";
 import Header from "../Header/Header";
 
 import "../Home/style.scss";
+import Menu from "../Menu/Menu";
 
 function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div id="container-home">
-      <Header />
+      <Header toggleMenu={toggleMenu} />
+      {isMenuOpen && <Menu />}
       <main>
         <img src={imgMarried} alt="Imagem do casal" />
         <div>

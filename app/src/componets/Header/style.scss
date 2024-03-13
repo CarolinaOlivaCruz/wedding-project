@@ -11,6 +11,7 @@ header div {
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header div span {
@@ -22,27 +23,30 @@ header div span {
 
 .button-menu-white {
   width: 25px;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 780px) {
   header {
-    box-shadow: 0.2px 0.2px 8px rgba(0, 0, 0, 0.4);
+   
     height: 70px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
   }
 
   header div {
-    width: 70%;
+    width: 90%;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 30px;
   }
 
   header div span {
     font-size: 45px;
-    height: 100%;
   }
 
   .button-menu-white {
-    width: 35px;
+    width: 40px;
   }
 }
