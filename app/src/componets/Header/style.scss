@@ -17,15 +17,11 @@ header div span {
   font-weight: 500;
   font-size: 28px;
   font-family: "Alice";
-}
-
-.button-menu-gray {
-  display: block;
-  width: 30px;
+  color: #ffff;
 }
 
 .button-menu-white {
-  display: none;
+  width: 25px;
 }
 
 @media (min-width: 780px) {
@@ -47,11 +43,6 @@ header div span {
   }
 
   .button-menu-white {
-    display: block;
-    width: 40px;
-  }
-
-  .button-menu-gray {
-    display: none;
+    width: 35px;
   }
 }
