@@ -2,8 +2,6 @@ import React from "react";
 
 import iconMenuWhite from "../../../src/assets/icon/menu-white.svg";
 
-import Menu from "../Menu/Menu";
-
 import "../Header/style.scss";
 
 interface HeaderProps {
