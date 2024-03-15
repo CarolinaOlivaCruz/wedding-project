@@ -27,6 +27,13 @@ header div span {
   align-items: center;
 }
 
+.button-menu-gray {
+  width: 25px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
 @media (min-width: 780px) {
   header {
     height: 70px;
@@ -50,4 +57,10 @@ header div span {
     // width: 40px;
     display: none;
   }
+
+  .button-menu-gray {
+    // width: 40px;
+    display: none;
+  }
+
 }

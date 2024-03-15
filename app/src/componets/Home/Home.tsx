@@ -6,35 +6,20 @@ import Header from "../Header/Header";
 import "../Home/style.scss";
 import Menu from "../Menu/Menu";
 
-function Home() {
+export function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    const checkScreenWidth = () => {
-      const isDesktop = window.innerWidth > 780;
-      if (isDesktop) {
-        setIsMenuOpen(true);
-      } else {
-        setIsMenuOpen(false);
-      }
-    };
-
-    checkScreenWidth();
-
-    window.addEventListener("resize", checkScreenWidth);
-
-    return () => {
-      window.removeEventListener("resize", checkScreenWidth);
-    };
-  }, []);
-
   return (
     <div id="container-home">
-      <Header toggleMenu={toggleMenu} />
+      <Header
+        toggleMenu={toggleMenu}
+        setIsMenuOpen={setIsMenuOpen}
+        isMenuOpen={isMenuOpen}
+      />
       <main>
         {isMenuOpen && <Menu />}
         <div className="container-main">
@@ -53,5 +38,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
