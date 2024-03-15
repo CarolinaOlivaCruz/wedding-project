@@ -2,21 +2,23 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  display: flex;
 }
 
-#container-home main {
+.container-main {
   height: 100vh;
   position: relative;
   z-index: 0;
+  transition: width 0.5s ease;
 }
 
-#container-home main img {
+.container-main img {
   width: 100vw;
   height: 60%;
   object-fit: cover;
 }
 
-#container-home main div {
+.container-main div {
   width: 80%;
   height: 40%;
   margin: 0 auto;
@@ -32,50 +34,43 @@
   z-index: 10;
 }
 
-#container-home main div h1,
-h2,
-p,
-span {
+.container-main div h1,
+.container-main div h2,
+.container-main div p,
+.container-main div span {
   font-family: "Alice";
   font-weight: 500;
 }
 
-#container-home main div p {
+.container-main div p {
   text-align: center;
 }
 
 @media (min-width: 780px) {
-  #container-home main div {
+  .container-main div {
     width: 50%;
     height: auto;
     max-height: 70vh;
     overflow-y: auto;
   }
 
-  #container-home main img {
+  .container-main img {
     height: 100vh;
   }
 
-  #container-home main div h1,
-  h2,
-  p,
-  span {
-    text-shadow: 0.2px 0.2px 8px rgba(0, 0, 0, 0.4);
-  }
-
-  #container-home main div h1 {
+  .container-main div h1 {
     font-size: 46px;
   }
 
-  #container-home main div span {
+  .container-main div span {
     font-size: 26px;
   }
 
-  #container-home main div h2 {
+  .container-main div h2 {
     font-size: 36px;
   }
 
-  #container-home main div p {
+  .container-main div p {
     font-size: 22px;
   }
 }

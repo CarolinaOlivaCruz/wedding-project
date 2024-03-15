@@ -6,9 +6,10 @@ function Menu() {
   return (
     <div className="menu">
       <ul>
-        <li>Opção 1</li>
-        <li>Opção 2</li>
-        <li>Opção 3</li>
+        <li>Lista de Presentes</li>
+        <li>Mural de Recados</li>
+        <li>Galeria</li>
+        <li>Informações</li>
       </ul>
     </div>
   );

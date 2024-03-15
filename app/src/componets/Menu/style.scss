@@ -1,0 +1,21 @@
+.menu {
+  width: 100%;
+  margin-top: 50px;
+  z-index: 1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (min-width: 780px) {
+  .menu {
+    position: fixed;
+    text-align: left;
+    margin-top: 35px;
+    padding: 0;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
